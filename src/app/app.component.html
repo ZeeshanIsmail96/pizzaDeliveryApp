@@ -1,4 +1,4 @@
-<!--The content below is only a placeholder and can be replaced.-->
+<!-- The content below is only a placeholder and can be replaced.
 <div style="text-align:center">
   <h1>
     Welcome to {{ title }}!
@@ -16,5 +16,98 @@
   <li>
     <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
   </li>
-</ul>
+</ul> -->
+<head>
+  <script src="js/vendor/modernizr-2.6.1-respond-1.1.0.min.js"></script>
+</head>
 
+
+<div>
+  <div id="top_bar">
+      <div class="container">
+          <div class="row">
+              <div class="col-md-6">
+                  <div class="home_account">
+                      <li><a href="login.html" routerLink="/login" routerLinkActive="active">Login</a></li>
+                      <li><a href="register.html" class="register" routerLink="/register" routerLinkActive="active">Register</a></li>
+                  </div>
+              </div>
+              <div class="col-md-6">
+                  <div class="cart">
+                      <i class="fa fa-shopping-cart"></i>
+                      (<a href="#">0 items</a>) in your cart (<a href="#">Rs. 0/-</a>)
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  <div id="main-header">
+          <div class="container">
+              <div class="row">
+                  <div class="col-md-4">
+                      <div class="logo">
+                          <a href="home.html"><img src="../assets/images/logo3.jpg" title="PizzaTown Website" alt="Pizza Web Logo" ></a>
+                      </div>
+                  </div>
+
+                  <div class="col-md-8">
+                      <div class="nav_bar">
+                          <ul>
+                              <div id="iefix">
+                                  <li><a href="home.html" routerLink="/home" routerLinkActive="active">Home</a></li>
+                                  <li><a href="gallery.html" routerLink="/gallery" routerLinkActive="active" >Gallery</a></li>  
+                                  <li><a href="team.html" routerLink="/team" routerLinkActive="active">Team</a></li>
+                                  <li><a href="contactus.html" routerLink="/contactus" routerLinkActive="active">Contact</a></li>
+                                  <li><a href="pizzahouses.html" routerLink="/pizzahouses" routerLinkActive="active">Pizza Houses</a></li>
+                                  <!-- <li class="">
+                                      <div class="dropdown">
+                                          <ul class="dropdown_btn">Pizza houses</ul>
+                                          <div class="dropdown-content">
+                                              <a href="pizzahut.html" routerLink="/pizzahut" routerLinkActive="active">Pizza Hut</a>
+                                              <a href="pizzamax.html" routerLink="/pizzamax" routerLinkActive="active">Pizza Max</a>
+                                              <a href="california.html" routerLink="/california" routerLinkActive="active">California</a>      
+                                          </div>
+                                      </div>
+                                  </li>       -->
+                              </div>
+                          </ul>
+                      </div>
+                  </div>
+                  
+              </div>
+          </div>
+      </div>
+    </div>
+    <br> <br>
+    <div class="container">
+        <router-outlet>
+                
+        </router-outlet>
+    </div>
+    
+    
+    <div id="footer">
+      <div class="container">
+          <div class="footer_social_icons">
+              <h4>Follow Us</h4>
+              <div class="social-agile">
+                  <ul>
+                      <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                      <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                      <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                  </ul>
+              </div>
+          </div>
+          <div class="footer_copyright">
+              <p>© 2017 Pizza Town. All rights reserved</p>
+          </div>
+      </div>
+    </div>
+
+
+        <script src="js/vendor/jquery-1.11.0.min.js"></script>
+        <script src="js/vendor/jquery.gmap3.min.js"></script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+
+        
