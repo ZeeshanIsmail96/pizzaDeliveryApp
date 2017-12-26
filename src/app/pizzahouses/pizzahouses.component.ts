@@ -8,7 +8,8 @@ import { PizzaappService } from './../pizzaapp.service';
   styleUrls: ['./pizzahouses.component.css']
 })
 export class PizzahousesComponent implements OnInit {
-  
+  ngOnInit() {
+  }
   constructor(private service: PizzaappService){}
 
   getAdmin(){
